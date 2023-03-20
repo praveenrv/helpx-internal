@@ -349,7 +349,7 @@ function getMonthShortName(monthNo) {
 
 const tutorialize = ({ detail }) => {
   const sk = detail.data;
-  console.log("i am in tutorialize");
+  window.open(`http://utut.corp.adobe.com/utut_service?pagePath=https://blog.adobe.com/en/publish/2023/03/08/celebrating-women-inspiring-pioneering-change`, 'hlx-sidekick-spark-translation');
   // your custom code from button.action goes here
 };
 
