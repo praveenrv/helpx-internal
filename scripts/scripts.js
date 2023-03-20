@@ -342,3 +342,25 @@ function getMonthShortName(monthNo) {
   date.setMonth(monthNo);
   return date.toLocaleString('en-US', { month: 'short' });
 }
+
+
+
+// tutorialize
+
+const tutorialize = ({ detail }) => {
+  const sk = detail.data;
+  console.log("i am in tutorialize");
+  // your custom code from button.action goes here
+};
+
+const sk = document.querySelector('helix-sidekick');
+if (sk) {
+  // sidekick already loaded
+  sk.addEventListener('custom:tutorialize', tutorialize);
+} else {
+  // wait for sidekick to be loaded
+  document.addEventListener('helix-sidekick-ready', () => {
+    document.querySelector('helix-sidekick')
+      .addEventListener('custom:tutorialize', tutorialize);
+  }, { once: true });
+}
