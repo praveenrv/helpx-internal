@@ -20,6 +20,6 @@
       "passConfig": true,
       "url": "http://utut.corp.adobe.com/utut_service",
       "includePaths": [ "**.docx**" ]
-    },
+    }
   ]
 }
