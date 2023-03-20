@@ -15,7 +15,7 @@
     {
       "id": "utut",
       "title": "Tutorialize",
-      "environments": [ "preview" ],
+      "environments": [ "preview","prod" ],
       "event": "tutorialize",
       "includePaths": [ "**.docx**" ]
     }
