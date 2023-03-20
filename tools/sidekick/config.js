@@ -58,6 +58,18 @@ function hasSchema(host) {
         },
       },
       {
+        id: 'utut',
+        condition: () => true,
+        button: {
+          text: 'UTUT',
+          action: (_, s) => {
+            const domain = 'http://utut.corp.adobe.com';
+            const { config } = s;
+            window.open(`${domain}/utut_service?pagePath=${encodeURIComponent(window.location.href)}`, 'hlx-sidekick-spark-translation');
+          },
+        },
+      },
+      {
         id: 'tools',
         condition: (s) => s.isEditor(),
         button: {
